@@ -63,6 +63,8 @@ namespace RestWithAspnetCoreUdemy.Services
                 _moqPersons.Remove(person);
         }
 
+#pragma warning disable 420
         private long IncrementAndGet() => Interlocked.Increment(ref _count);
+#pragma warning restore 420
     }
 }
